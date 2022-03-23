@@ -1,0 +1,33 @@
+<div class="mySideNav">
+    <ul class="side-menu">
+        <li (click)="nav.toggleMenu()" routerLink="/index" routerLinkActive="active-link">
+            <a>{{ 'navegacion.inicio' | translate }}</a>
+        </li>
+        <li (click)="nav.toggleMenu()" routerLink="/products" routerLinkActive="active-link">
+            <a>{{ 'navegacion.productos' | translate }}</a>
+        </li>
+        <li (click)="nav.toggleMenu()" routerLink="/about" routerLinkActive="active-link">
+            <a>{{ 'navegacion.quienesSomos' | translate }}</a>
+        </li>
+        <li (click)="nav.toggleMenu()" routerLink="/research" routerLinkActive="active-link">
+            <a>{{ 'navegacion.investigacion' | translate }}</a>
+        </li>
+        <li (click)="nav.toggleMenu()" routerLink="/contact" routerLinkActive="active-link">
+            <a>{{ 'navegacion.contacto' | translate }}</a>
+        </li>
+        <li>
+            <div class="dropdown orden">
+                <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{
+                    'lan' | translate }}</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" #langSelect
+                     (change)="test(langSelect)">
+                    <a class="dropdown-item" [class.active]="selected == 'es'"
+                       (click)="translate.use('es'); selected = 'es'">Español</a>
+                    <a class="dropdown-item" [class.active]="selected == 'en'"
+                       (click)="translate.use('en'); selected = 'en'">English</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <img src="../assets/images/stock/thc.png" alt="THC Molecule">
+</div>

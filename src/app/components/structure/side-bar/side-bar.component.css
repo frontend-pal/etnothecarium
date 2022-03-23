@@ -1,0 +1,132 @@
+:host {
+    background: #2a2a2b;
+    color: #fff;
+    position: fixed;
+    right: auto;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    visibility: visible;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.mySideNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.side-menu {
+    font-family: Open Sans;
+    font-weight: 600;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-menu li {
+    padding: .4rem;
+    font-size: 2rem;
+    color: #e58033;
+}
+
+.side-menu li a {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.active-link {
+    border-bottom: 3px solid #e58033;
+}
+
+.orden .btn {
+    padding: .65rem;
+    border-radius: 50%;
+    width: 2.8125rem;
+    border: 0;
+    height: 2.8125rem;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #e58033;
+}
+
+.orden .btn:hover {
+    background-color: rgba(0, 0, 0, .09);
+    outline-color: transparent;
+}
+
+.dropdown-menu {
+    margin: -0.54rem -53px 0px;
+    min-width: 3rem;
+    padding: 0;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-item a {
+    text-transform: capitalize !important;
+}
+
+.dropdown-item.active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3e3e3d;
+}
+
+img {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 50%;
+    max-width: 210px;
+}
+
+@media screen and (max-height: 340px) {
+    .boton-cerrar i {
+        font-size: 1.5rem;
+    }
+    .side-menu li {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .logo {
+        display: none;
+    }
+    .side-menu {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .logo {
+        height: 20%;
+        padding-top: .5rem;
+    }
+    .li-logo img {
+        height: 150px;
+    }
+}
