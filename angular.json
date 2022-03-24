@@ -29,9 +29,10 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ],            
+            ],
             "styles": [
-              "node_modules/material-design-icons/iconfont/material-icons.css",              
+              "node_modules/material-design-icons/iconfont/material-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/animate.css/animate.css",
               "src/styles.scss"
             ],
@@ -39,7 +40,10 @@
               "node_modules/jquery/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "src/assets/js/scrollmagic/ScrollMagic.min.js",
+              "src/assets/js/scrollmagic/plugins/animation.gsap.min.js",
+              "src/assets/js/scrollmagic/plugins/debug.addIndicators.min.js"
             ]
           },
           "configurations": {

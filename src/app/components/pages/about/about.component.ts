@@ -1,10 +1,10 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { TweenMax, TimelineMax } from 'gsap';
-import * as ScrollMagic from 'ScrollMagic';
 
-declare var jQuery: any;
+import { TweenMax, TimelineMax } from "gsap";
+
+declare var ScrollMagic: any;
 declare var $: any;
 
 @Component({
@@ -14,7 +14,7 @@ declare var $: any;
 })
 export class AboutComponent implements OnInit, AfterViewInit {
     constructor(
-        private translate: TranslateService,
+        public translate: TranslateService,
         private route: ActivatedRoute,
     ) {
     }

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
-import { HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     imports: [
         HttpClientModule,
         CommonModule,
-        TranslateModule.forChild({}),
+        TranslateModule.forChild()
     ],
     exports: [
         CommonModule,

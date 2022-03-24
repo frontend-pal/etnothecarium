@@ -13,7 +13,6 @@ export class UtilsService {
   public remove(className: string) {
     const elements = document.getElementsByClassName(className) as any || [];
 
-    console.log(elements);
     if (elements.length > 0) {
       elements.forEach(function (element: any) {
         if (!element.innerHTML) { element.remove(); }

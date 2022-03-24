@@ -2,12 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from "./index.component";
 import { RouterModule, Routes } from "@angular/router/";
-
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { SharedModule } from 'app/shared/shared.module';
-import { SharedLazyModule } from 'app/shared/shared-lazy.module';
+import { SharedLazyModule } from '../../../shared/shared-lazy.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 const routes: Routes = [
   { path: '', component: IndexComponent }
@@ -17,7 +13,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedLazyModule
+    SharedLazyModule,
+    // TranslateModule.forChild({})
     // SharedModule,
     // HttpClientModule,
     // TranslateModule

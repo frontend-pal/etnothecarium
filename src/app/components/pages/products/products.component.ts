@@ -1,14 +1,10 @@
 import {Component, OnInit, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import {TweenMax} from 'gsap';
-import {TimelineMax, Sine} from 'gsap/TweenMax';
-import ScrollMagic from 'ScrollMagic';
-import 'animation.gsap'
-import 'debug.addIndicators'
 
-declare var jQuery: any;
+import { TweenMax, TimelineMax } from "gsap";
+
+declare var ScrollMagic: any;
 declare var $: any;
-declare var ease, TimelineMax, TweenMax, Power4, Power1, Power2, Power3, Bounce, Elastic, Linear: any;
 
 @Component({
     selector: 'app-products',
@@ -20,17 +16,17 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     constructor(private translate: TranslateService) {
     }
 
-    @ViewChild('rutasvg1') rutasvg1: ElementRef;
-    @ViewChild('rutasvg2') rutasvg2: ElementRef;
-    @ViewChild('rutasvg3') rutasvg3: ElementRef;
-    @ViewChild('sol1') sol1: ElementRef;
-    @ViewChild('sol2') sol2: ElementRef;
-    @ViewChild('sol3') sol3: ElementRef;
-    @ViewChild('sol4') sol4: ElementRef;
-    @ViewChild('albahaca') albahaca: ElementRef;
-    @ViewChild('flor') flor: ElementRef;
+    @ViewChild('rutasvg1') rutasvg1: ElementRef | any;
+    @ViewChild('rutasvg2') rutasvg2: ElementRef | any;
+    @ViewChild('rutasvg3') rutasvg3: ElementRef | any;
+    @ViewChild('sol1') sol1: ElementRef | any;
+    @ViewChild('sol2') sol2: ElementRef | any;
+    @ViewChild('sol3') sol3: ElementRef | any;
+    @ViewChild('sol4') sol4: ElementRef | any;
+    @ViewChild('albahaca') albahaca: ElementRef | any;
+    @ViewChild('flor') flor: ElementRef | any;
 
-    pathPrepare($el) {
+    pathPrepare($el: any) {
         var lineLength = $el[0].getTotalLength();
         console.log(lineLength)
         $el.css('stroke-dasharray', lineLength);
@@ -94,10 +90,10 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         var route_2 = new TimelineMax().add(guia2);
         var route_3 = new TimelineMax().add(guia3);
 
-        var sole1 = new TimelineMax().add(guia4);
-        var sole2 = new TimelineMax().add(guia5);
-        var sole3 = new TimelineMax().add(guia6);
-        var sole4 = new TimelineMax().add(guia7);
+        var sole1: any = new TimelineMax().add(guia4);
+        var sole2: any = new TimelineMax().add(guia5);
+        var sole3: any = new TimelineMax().add(guia6);
+        var sole4: any = new TimelineMax().add(guia7);
 
         var gira8 = new TimelineMax().add(guia8);
         var gira9 = new TimelineMax().add(guia9);

@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from "./contact.component";
 import { RouterModule, Routes } from "@angular/router/";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule } from '@angular/http';
 
+import { SharedLazyModule } from '../../../shared/shared-lazy.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import { SharedLazyModule } from 'app/shared/shared-lazy.module';
 
 const routes: Routes = [
   { path: '', component: ContactComponent }
@@ -20,9 +20,8 @@ const routes: Routes = [
       apiKey: 'AIzaSyATGoSNEGkCM8_d9NNrUdbBVDZ5FjVaBK4'
     }),
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
-    HttpModule,
-    JsonpModule,
     SharedLazyModule
   ],
   declarations: [ContactComponent]

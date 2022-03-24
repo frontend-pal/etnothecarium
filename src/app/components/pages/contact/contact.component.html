@@ -10,19 +10,19 @@
     <div class="zone1 col-12 col-md-6">
       <h1 class="title">{{ 'contact.tituloSection1' | translate }}</h1>
       <div class="formulario">
-        <form #f [formGroup]="form" (ngSubmit)="save(f)" novalidate>
+        <form #f [formGroup]="form" (ngSubmit)="save()" novalidate>
         <!--<form #f [formGroup]="form" novalidate>-->
           <input class="col-lg-6" autocomplete="name" type="text" formControlName="nombre" name="name" placeholder="{{ 'contact.formInput1' | translate }}">
           <input class="col-lg-6" autocomplete="email" type="text" formControlName="email" name="e-mail" placeholder="{{ 'contact.formInput2' | translate }}">
           <input class="col-lg-6" autocomplete="phone" type="text" formControlName="telefono" name="phone" placeholder="{{ 'contact.formInput3' | translate }}">
-          <div class="sort1 col-lg-6" dir="{{'App.dir' | translate}}">
+          <!-- <div class="sort1 col-lg-6" dir="{{'App.dir' | translate}}">
             <select class="btn-select1" formControlName="pregunta">
               <option value="">{{'contact.formPreguntaText6' | translate}}</option>
               <option *ngFor="let pregunta of preguntas" (click)="seleccionarPregunta(pregunta)">
-                {{pregunta['App.lang' | translate]}}
+                {{pregunta[App.lang] | translate}}
               </option>
-            </select>
-          </div>
+            </select> 
+          </div>-->
           <textarea class="col-lg-12" rows="8" cols="" formControlName="mensaje" placeholder="{{ 'contact.formTextarea' | translate }}"></textarea>
           <div class="btnForm ">
             <!--<button type="submit" [disabled]="!form.valid ">{{ 'contact.formButton' | translate }}</button>-->
@@ -48,8 +48,8 @@
   <div class=" ">
     <!-- <h5>Direccion o ubicacion escrita en texto</h5> -->
   </div>
-  <agm-map [latitude]="lat " [longitude]="lng " [zoom]="15 " [mapTypeId]=" 'hybrid' ">
-    <agm-marker [latitude]="lat " [longitude]="lng "></agm-marker>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
   </agm-map>
 </div>
 

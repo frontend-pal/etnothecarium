@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
     });
 
     this.router.events.subscribe(event => {
-      this.utils.remove('modal-backdrop');
+      $('.modal-backdrop').remove();
       window.scrollTo(0, 0);
       if (event instanceof NavigationEnd) {
         setTimeout(() => {
