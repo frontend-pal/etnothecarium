@@ -1,0 +1,211 @@
+<div class="banner">
+    <div class="top">
+        <h1>{{ 'index.titulo' | translate }}</h1>
+        <img src="assets/images/svg/flora-1.svg" alt="Floral Ornament">
+        <h4>{{ 'index.subtitulo' | translate }}</h4>
+    </div>
+    <div class="arrow-down bounce">
+        <i (click)='arrowClick();' class="material-icons">&#xE313;</i>
+    </div>
+    <img class="curved-div" src="assets/images/bg/inicio-banner.png">
+</div>
+<div id="section-1" class="section-1">
+    <img class="cannabis1" src="assets/images/stock/cannabis1.png">
+    <img class="calendula1" src="assets/images/stock/calendula1.jpg" alt="Calendula">
+    <div id="bloque1" class="container-fluid">
+        <h1 class="title">{{ 'index.titulo' | translate }}</h1>
+        <h3 class="subtitle">{{ 'index.subtitulo' | translate }}</h3>
+        <div class="flowers">
+            <i class="material-icons">&#xE3E3;</i>
+            <i class="material-icons">&#xE3E3;</i>
+            <i class="material-icons">&#xE3E3;</i>
+            <i class="material-icons">&#xE3E3;</i>
+            <i class="material-icons">&#xE3E3;</i>
+        </div>
+        <p>
+            {{'index.textoIndex1' | translate}}
+        </p>
+        <a class="link" [routerLink]="['/about']">{{'index.textoIndex2' | translate}}
+        </a>
+    </div>
+</div>
+<div id="section-2" class="section-2">
+    <div id="bloque2" class="container-fluid">
+        <h2 id="titleb2" class="title">{{'index.textoIndex3Section2' | translate}}
+            <span>{{'index.textoIndex4Section2' | translate}}</span>
+        </h2>
+        <div class="flower">
+            <div class="white-line"></div>
+            <i class="material-icons">&#xE3E3;</i>
+            <div class="white-line"></div>
+        </div>
+        <p>
+            {{'index.textoIndex5Section2' | translate}}
+        </p>
+        <div class="features row">
+            <div class="feature col-sm-6">
+                <img src="assets/images/svg/education-icon.svg">
+                <h4>{{'index.features1' | translate}}</h4>
+                <div class="over">
+                    <i class="material-icons" data-toggle="modal" data-target="#modal1">&#xE8B6;</i>
+                </div>
+            </div>
+            <div class="feature col-sm-6">
+                <img src="assets/images/svg/research-icon.svg">
+                <h4>{{'index.features2' | translate}}</h4>
+                <div class="over">
+                    <i class="material-icons" data-toggle="modal" data-target="#modal2">&#xE8B6;</i>
+                </div>
+            </div>
+            <div class="feature col-sm-6">
+                <img src="assets/images/svg/plant-icon.svg">
+                <h4>{{'index.features3' | translate}}</h4>
+                <div class="over">
+                    <i class="material-icons" data-toggle="modal" data-target="#modal3">&#xE8B6;</i>
+                </div>
+            </div>
+            <div class="feature col-sm-6">
+                <img src="assets/images/svg/hands-icon.svg">
+                <h4>{{'index.features4' | translate}}</h4>
+                <div class="over">
+                    <i class="material-icons" data-toggle="modal" data-target="#modal4">&#xE8B6;</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="section-3" class="section-3">
+    <div id="bloque3" class="container-fluid">
+        <h2 id="titulo3" class="title">{{'index.textoIndex1Section3' | translate}}
+            <span>{{'index.textoIndex2Section3' | translate}}</span>
+        </h2>
+        <div class="flower">
+            <div class="white-line"></div>
+            <i class="material-icons">&#xE3E3;</i>
+            <div class="white-line"></div>
+        </div>
+        <div class="products">
+            <div class="zone1 col-6 col-md-4">
+                <div class="product">
+                    <img class="img-fluid" src="assets/images/products/1.jpg" alt="1">
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="assets/images/products/2.jpg" alt="2">
+                </div>
+            </div>
+            <div class="zone2 col-6 col-md-4">
+                <div class="product">
+                    <img class="img-fluid" src="assets/images/products/5.jpg" alt="5">
+                </div>
+            </div>
+            <div class="zone3 col-12 col-md-4">
+                <div class="product">
+                    <img class="img-fluid" src="./assets/images/products/3.jpg" alt="3">
+                </div>
+                <div class="product">
+                    <img id="triggerCapas" class="img-fluid" src="assets/images/products/4.jpg" alt="4">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="section-4" #section4 class="section-4">
+    <div class="container-fluid">
+        <img id="anis1" #anis1 src="assets/images/index/anis-gira1.png">
+        <img id="anis2" #anis2 src="assets/images/index/anis-gira1.png">
+        <img id="anis3" #anis3 src="assets/images/index/anis-gira2.png">
+        <img id="cilantro" #cilantro src="assets/images/index/cilantro-gira.png">
+        <img id="capapequenas" #capapequenas src="assets/images/index/capapequenas.png">
+        <img id="capainferior3" #capainferior3 src="assets/images/index/capainferior3.png">
+        <div class="text-anim">
+            <h1 class="title">{{'index.textoIndex1Section4' | translate}}</h1>
+            <h3 class="subtitle">{{'index.textoIndex2Section4' | translate}}</h3>
+            <div class="flowers">
+                <i class="material-icons">&#xE3E3;</i>
+                <i class="material-icons">&#xE3E3;</i>
+                <i class="material-icons">&#xE3E3;</i>
+                <i class="material-icons">&#xE3E3;</i>
+                <i class="material-icons">&#xE3E3;</i>
+            </div>
+            <p>
+                {{'index.textoIndex3Section4' | translate}}
+            </p>
+            <a id="triggerFinal" class="link" [routerLink]="['/contact']">{{'index.textoIndex4Section4' | translate}}
+            </a>
+        </div>
+    </div>
+    <img id="capainferior2" #capainferior2 src="assets/images/index/capainferior2.png">
+    <img id="capainferior1" #capainferior1 src="assets/images/index/capainferior1.png">
+    <img id="capamedia" #capamedia src="assets/images/index/capamedia.png">
+    <img id="capasuperior" #capasuperior src="assets/images/index/capasuperior.png">
+</div>
+
+
+<!-- Modales de las caracteristicas -->
+<!--modal1-->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{'index.modalFeatures1' | translate}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+            <div class="modal-body" [innerHtml]="'index.modalFeatures1text' | translate">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal2-->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{'index.modalFeatures2' | translate}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{'index.modalFeatures2text' | translate}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal3-->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{'index.modalFeatures3' | translate}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{'index.modalFeatures3text' | translate}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal4-->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{'index.modalFeatures4' | translate}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{'index.modalFeatures4text' | translate}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <app-shared></app-shared> -->

@@ -1,0 +1,487 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    color: #040404;
+    z-index: 3;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+p,
+.img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1.666rem 0;
+    max-width: 36.5rem;
+    width: 100%;
+}
+
+.banner {
+    height: 61.5vh;
+    width: 100vw;
+    background-image: url("../../../../assets/images/bg/research-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 1rem 2rem;
+    text-align: center;
+    -webkit-transform: translateY(1.6rem);
+    transform: translateY(1.6rem);
+}
+
+.top h1 {
+    color: #fff;
+    font-family: HipsterScriptPro;
+    font-size: 18vw;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.top h4 {
+    color: #e5a833;
+    font-family: BebasNeue;
+    font-size: 8vw;
+    margin-top: -.4rem;
+}
+
+.top img {
+    position: relative;
+    margin-top: -6vw;
+}
+
+.bottom-curve {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.section-1 {
+    background-color: #fff;
+}
+
+.zone1,
+.zone2,
+.zone3,
+.zone4 {
+    text-align: center;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bottom-left {
+    display: none;
+}
+
+.zone1 img:nth-of-type(2) {
+    display: none;
+}
+
+.title {
+    color: #e5a833;
+    margin-bottom: .1rem;
+}
+
+.one,
+.two {
+    width: 50%;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.four {
+    height: 100vw;
+    overflow: hidden;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.aqua {
+    background-color: #24a08a;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    position: relative;
+}
+
+.zone2 img {
+    -webkit-transform: translateX(10rem);
+    transform: translateX(10rem);
+}
+
+.col-6,
+.col-md-4,
+.col-md-8,
+.col-md-12 {
+    padding: 0;
+}
+
+.img-gallery {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 900ms ease-in-out;
+    transition: all 900ms ease-in-out;
+}
+
+.img-gallery:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    /*transform: scale(1.2)rotatez(7deg);*/
+}
+
+.aliados h1 {
+    margin-bottom: 2rem;
+}
+
+.aliados-p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.aliado {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 28%;
+    flex: 0 1 55%;
+    cursor: pointer;
+}
+
+.aliado img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media screen and (min-width: 576px) {
+    .top h1 {
+        font-size: 8rem;
+    }
+
+    .top h4 {
+        font-size: 2.5rem;
+    }
+
+    .top img {
+        position: static;
+        margin-top: -2rem;
+    }
+
+    .aliados-p {
+        margin-bottom: 15rem;
+    }
+
+    .aliado {
+        width: 28%;
+        max-width: 28%;
+        flex: 0 1 28%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        padding-top: 10rem;
+    }
+
+    .top {
+        -webkit-transform: translateY(-4.4rem);
+        transform: translateY(-4.4rem);
+    }
+
+    .top img {
+        display: none;
+    }
+
+    .top h4 {
+        font-size: 3rem;
+        margin-top: -2.2rem;
+    }
+
+    .purple {
+        -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+        order: 7;
+    }
+
+    .aqua {
+        -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+        order: 6;
+    }
+
+    .red {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .orange {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .green {
+        -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+        order: 5;
+    }
+
+    .black {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .one {
+        width: 33.33334%;
+        height: 33.33334vw;
+    }
+
+    .two {
+        width: 66.666%;
+        height: 33.33334vw;
+    }
+
+    .four {
+        height: 100vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .purple {
+        -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+        order: 5;
+        position: relative;
+        left: 40vw;
+        bottom: 20vw;
+    }
+
+    .aqua {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+        position: relative;
+        left: 40vw;
+        bottom: 20vw;
+    }
+
+    .red {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .orange {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .green {
+        -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+        order: 6;
+        position: relative;
+        left: 40vw;
+        bottom: 20vw;
+    }
+
+    .black {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .one {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        width: 20%;
+        max-width: 20%;
+        height: 20vw;
+    }
+
+    .two {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        width: 40%;
+        max-width: 40%;
+        height: 20vw;
+    }
+
+    .four {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        width: 40%;
+        max-width: 40%;
+        height: 40vw;
+    }
+
+    .gallery {
+        margin-bottom: -20vw;
+    }
+
+    /*aqui van los estilos responsive para 992px*/
+    .zone1 .content {
+        position: relative;
+        z-index: 3;
+        margin-bottom: 14rem;
+    }
+
+    .zone1 img {
+        position: absolute;
+        margin: 0;
+    }
+
+    .zone1 img:nth-of-type(1) {
+        display: block;
+        top: -1rem;
+        left: -20rem;
+    }
+
+    .zone1 img:nth-of-type(2) {
+        display: block;
+        bottom: 0;
+        right: 0;
+    }
+
+    .zone2 .img-fluid {
+        position: absolute;
+        left: -326px;
+        top: -9px;
+        margin: 0;
+    }
+
+    .zone2 p {
+        position: relative;
+        z-index: 3;
+        margin-bottom: 10rem;
+    }
+
+    .zone3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: 870px;
+    }
+
+    .zone3 p {
+        text-align: right;
+    }
+
+    .zone3 .img-fluid {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .zone4 {
+        max-width: 720px;
+    }
+
+    .last-pa {
+        margin-bottom: 2rem;
+    }
+
+    .zone4 img {
+        max-width: none;
+        width: 49%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .zone4-images .img-fluid {
+        display: block;
+        position: absolute;
+        bottom: -130px;
+        right: -420px;
+        width: 600px;
+    }
+
+    .full-width {
+        width: 100%;
+        position: relative;
+    }
+
+    .bottom-left {
+        display: block;
+        position: absolute;
+        bottom: -280px;
+        left: 0;
+        width: 470px;
+    }
+}

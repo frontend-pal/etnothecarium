@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("./assets/font/webfont.css");
+html {
+  font-size: 15px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  padding-right: 0;
+  font-family: HipsterScriptPro, serif;
+  /*Para arreglar el problema de las modales*/
+}
+
+body {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  /* display: none; */
+}
+
+*::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  font-family: Open Sans, sans-serif, HipsterScriptPro, serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.row {
+  margin: 0;
+}
+
+h1 {
+  font-family: hipsterScriptPro;
+  font-size: 3.6rem;
+  margin-bottom: -1rem;
+}
+
+a.link {
+  color: #e5a833;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 9;
+}
+
+@media all and (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hidden {
+    display: none !important;
+  }
+}

@@ -1,0 +1,86 @@
+<div class="banner">
+  <div class="top">
+    <h1>{{ 'contact.titulo' | translate }}</h1>
+    <img src="../assets/images/svg/flora-1.svg" alt="Floral Ornament" />
+    <h4>{{ 'contact.subtitulo' | translate }}</h4>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="section-1 row">
+    <div class="zone1 col-12 col-md-6">
+      <h1 class="title">{{ 'contact.tituloSection1' | translate }}</h1>
+      <div class="formulario">
+        <form #f [formGroup]="form" (ngSubmit)="save()" novalidate>
+        <!--<form #f [formGroup]="form" novalidate>-->
+          <input class="col-lg-6" autocomplete="name" type="text" formControlName="nombre" name="name" placeholder="{{ 'contact.formInput1' | translate }}">
+          <input class="col-lg-6" autocomplete="email" type="text" formControlName="email" name="e-mail" placeholder="{{ 'contact.formInput2' | translate }}">
+          <input class="col-lg-6" autocomplete="phone" type="text" formControlName="telefono" name="phone" placeholder="{{ 'contact.formInput3' | translate }}">
+          <!-- <div class="sort1 col-lg-6" dir="{{'App.dir' | translate}}">
+            <select class="btn-select1" formControlName="pregunta">
+              <option value="">{{'contact.formPreguntaText6' | translate}}</option>
+              <option *ngFor="let pregunta of preguntas" (click)="seleccionarPregunta(pregunta)">
+                {{pregunta[App.lang] | translate}}
+              </option>
+            </select> 
+          </div>-->
+          <textarea class="col-lg-12" rows="8" cols="" formControlName="mensaje" placeholder="{{ 'contact.formTextarea' | translate }}"></textarea>
+          <div class="btnForm ">
+            <!--<button type="submit" [disabled]="!form.valid ">{{ 'contact.formButton' | translate }}</button>-->
+            <button class="button1" type="submit" [disabled]="!form.valid">{{ 'contact.formButton' | translate }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="zone2 col-12 col-md-6 ">
+      <div class="title2 ">
+        <h1 class="title ">{{ 'contact.tituloZona2' | translate }}</h1>
+        <h1 class="title ">{{ 'contact.titulo1Zona2' | translate }}</h1>
+      </div>
+      <h2>{{ 'contact.textoZona2' | translate }}</h2>
+      <a class="button1" href="{{linkea}}" target="_blank">{{ 'contact.botonZona2' | translate }}</a>
+      <img src="../assets/images/svg/flower-green.svg ">
+      <img src="../assets/images/svg/flower-green.svg ">
+      <div class="vacio "></div>
+    </div>
+  </div>
+</div>
+<div class="section-2 ">
+  <div class=" ">
+    <!-- <h5>Direccion o ubicacion escrita en texto</h5> -->
+  </div>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</div>
+
+<div class="section-3 ">
+  <div class="zone3-1 ">
+    <h1>Etnothecarium</h1>
+    <h4 class="botica ">Botica Natural</h4>
+    <div class="interno ">
+      <div class="items ">
+        <div class="icono ">
+          <i class="material-icons ">&#xE61D;</i>
+          <h5 href="tel://573167541823 ">+57 3167541823</h5>
+        </div>
+        <div class="icono ">
+          <i class="material-icons ">&#xE61D;</i>
+          <h5 href="tel://573016979018 ">+57 3016979018</h5>
+        </div>
+        <div class="icono ">
+          <i class="material-icons ">&#xE0E1;</i>
+          <h5>info@etnothecarium.com</h5>
+        </div>
+        <!--<div class="icono ">
+          <i class="material-icons ">&#xE0C8;</i>
+          <h5>callefalsa No. 12-34</h5>
+        </div>-->
+      </div>
+      <div class="floral ">
+        <img class="hidden-md-up " src="../assets/images/svg/flora-2.svg " alt="Floral Ornament ">
+        <img class="arreglo " src="../assets/images/svg/flora-3.svg " alt="Floral Ornament ">
+      </div>
+    </div>
+    <img class="bg-image arreglo " src="../assets/images/bg/contact-items-bg.png ">
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<side-bar [@slideInOut]="menuState"></side-bar>
+<nav class="navbar fixed-top" role="navigation">
+
+  <!-- ACA TERMINA EL NAVBAR XS-MD  -->
+  <div class="container1 hidden-md-up">
+    <button (click)="toggleMenu()" id="nav-icon" [ngClass]="setClasses()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </div>
+  <!-- ACA TERMINA EL NAVBAR XS-MD  -->
+
+  <!-- ACA EMPIEZA TERMINA EL NAVBAR MD-XL  -->
+  <div class="container2 hidden">
+    <a routerLink="/tienda" class="navbar-brand hidden-lg-up">
+      <img src="../../assets/images/svg/logo-nav.svg">
+    </a>
+    <a routerLink="/tienda" class="navbar-brand hidden-md-down">
+      <img src="../../assets/images/svg/logo-nav.svg">
+    </a>
+    <!-- <div> -->
+    <!-- <h3>{{ 'HOME.TITLE' | translate }}</h3> -->
+    <!-- <ul class="collection" *ngFor="let lang of translate.getLangs()" >
+             <li [class.active]="selected == lang" (click)="translate.use(lang); selected = lang" class="collection-item">{{ lang }}</li>
+           </ul> -->
+    <!-- <button (click)="switchLanguage('en')">en</button>
+      <button (click)="switchLanguage('es')">es</button> -->
+    <!-- </div> -->
+    <!-- <div class="orden">
+      <i class="material-icons idioma">language</i>
+      <select class="cambiar btn" #langSelect (change)="translate.use(langSelect.value)">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+      </select>
+    </div> -->
+    <div class="menu-derecha hidden">
+      <!-- <ul class="collection" *ngFor="let lang of translate.getLangs()">
+         <div class="trans"> -->
+      <!-- <li [class.active]="selected == lang" (click)="translate.use(lang); selected = lang" class="collection-item">{{ lang }}</li>
+            </ul> -->
+      <!-- </div> -->
+      <ul>
+        <li routerLink="/index" routerLinkActive="active-link">
+          <a>{{ 'navegacion.inicio' | translate }}</a>
+        </li>
+        <i class="material-icons">filter_vintage</i>
+        <li routerLink="/products" routerLinkActive="active-link">
+          <a>{{ 'navegacion.productos' | translate }}</a>
+        </li>
+        <i class="material-icons">filter_vintage</i>
+        <li routerLink="/about" routerLinkActive="active-link">
+          <a>{{ 'navegacion.quienesSomos' | translate }}</a>
+        </li>
+        <i class="material-icons">filter_vintage</i>
+        <li routerLink="/research" routerLinkActive="active-link">
+          <a>{{ 'navegacion.investigacion' | translate }}</a>
+        </li>
+        <i class="material-icons">filter_vintage</i>
+        <li routerLink="/contact" routerLinkActive="active-link">
+          <a>{{ 'navegacion.contacto' | translate }}</a>
+        </li>
+        <i class="material-icons">filter_vintage</i>
+        <li class="lidioma">
+          <div class="dropdown orden">
+            <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons lang">language</i>
+              <h5 class="textolang">{{texto}}</h5>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" #langSelect (change)="test2(langSelect)">
+              <a class="dropdown-item" [class.active]="selected == 'es'" (click)="translate.use('es'); selected = 'es'">Español</a>
+              <a class="dropdown-item" [class.active]="selected == 'en'" (click)="translate.use('en'); selected = 'en'">English</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
