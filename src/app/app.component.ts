@@ -14,6 +14,7 @@ declare var $: any;
       <footer></footer>
   `,
   styles: [`
+      
       footer {
           margin-top: -13rem;
       }

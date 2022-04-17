@@ -37,11 +37,12 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/jquery.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/hammerjs/hammer.min.js",
               "src/assets/js/scrollmagic/ScrollMagic.min.js",
+              "src/assets/js/TweenMax.min.js",
               "src/assets/js/scrollmagic/plugins/animation.gsap.min.js",
               "src/assets/js/scrollmagic/plugins/debug.addIndicators.min.js"
             ]
@@ -51,13 +52,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
                 }
               ],
               "fileReplacements": [
