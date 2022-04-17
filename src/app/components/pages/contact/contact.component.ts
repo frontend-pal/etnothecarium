@@ -12,8 +12,8 @@ declare var $: any;
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  lat: number = 4.410910;
-  lng: number = -75.257478;
+  lat: number = 4.441031;
+  lng: number = -75.204503;
   linkea: string = "https://docs.google.com/forms/d/e/1FAIpQLSeqwmtc_gEBis8o1n2ErkcDdUyJloi7AZ9N4SGEtmJy7cwt7g/viewform";
 
   form!: FormGroup;

@@ -37,7 +37,7 @@
   color: #e5a833;
   font-family: BebasNeue;
   font-size: 8vw;
-  margin-top: -.4rem;
+  margin-top: -0.4rem;
 }
 
 .top img {
@@ -80,8 +80,8 @@ textarea,
   width: 100%;
   border: 1px solid #717073;
   border-radius: 2px;
-  margin-bottom: .8rem;
-  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0.8rem;
+  font-family: "Open Sans", sans-serif;
   color: #7d7d7d;
 }
 
@@ -111,8 +111,8 @@ textarea,
   width: 100%;
   border: 1px solid #717073;
   border-radius: 2px;
-  margin-bottom: .8rem;
-  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0.8rem;
+  font-family: "Open Sans", sans-serif;
   color: #7d7d7d;
   height: 3rem;
   -ms-flex-align: center;
@@ -167,7 +167,7 @@ textarea,
 }
 
 .button1 {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -176,7 +176,7 @@ textarea,
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
   border: none;
-  padding: .7rem 1.54rem;
+  padding: 0.7rem 1.54rem;
   margin-bottom: 2rem;
   cursor: pointer;
 }
@@ -186,7 +186,7 @@ textarea,
   cursor: not-allowed;
 }
 
-.zone2 img {
+.zone2 img.flower {
   position: absolute;
   width: 4rem;
   -webkit-transform: rotateZ(-40deg) translate(-1rem, 2rem);
@@ -213,14 +213,51 @@ textarea,
 .zone2 h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .zone1,
 .zone2 {
-  max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 380px;
+  max-width: calc(50vw - 6rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 4rem 3rem;
+}
+
+.ws-button {
+  background-color: #e58033;
+  color: #fff;
+  border-radius: 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+}
+
+.ws-button p {
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-align: left;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.ws-button p span {
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+  margin-left: 1px;
+}
+
+.ws-button .ws-icon {
+  margin: 8px 0 8px 48px;
+  width: 42px;
 }
 
 .section-2 {
@@ -260,7 +297,7 @@ agm-map {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #040404;
   position: absolute;
   top: 3.2rem;
@@ -338,9 +375,6 @@ agm-map {
     align-items: center;
     border: 2px solid #717073;
     border-radius: 1.3rem;
-    border-top-color: transparent;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
   }
   .zone2 .title2,
   .zone2 h2,
@@ -356,18 +390,18 @@ agm-map {
     font-size: 2rem;
     padding: 0 1.4rem;
   }
-  .zone2 img {
+  .zone2 img.flower {
     position: absolute;
     width: 4rem;
     background-color: #fff;
   }
-  .zone2 img:nth-of-type(1) {
+  .zone2 img.flower:nth-of-type(1) {
     -webkit-transform: rotateZ(-40deg);
     transform: rotateZ(-40deg);
     top: -30px;
     right: -30px;
   }
-  .zone2 img:nth-of-type(2) {
+  .zone2 img.flower:nth-of-type(2) {
     bottom: -15px;
     left: -23px;
     -webkit-transform: rotateZ(18deg);
@@ -405,7 +439,7 @@ agm-map {
     align-items: flex-end;
   }
   .zone3-1 .icono i {
-    margin-right: .8rem;
+    margin-right: 0.8rem;
   }
   .zone3-1 img {
     width: 260px;
@@ -491,4 +525,23 @@ agm-map {
     padding-bottom: 18rem;
     margin-bottom: -18rem;
   }
+}
+
+.qr-image {
+  width: 100%;
+  max-width: 160px;
+  margin: 2rem auto;
+}
+
+.qr-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.qr-text a {
+  color: #e5a833;
+}
+
+.qr-text a:hover {
+  color: #e58033;
 }
