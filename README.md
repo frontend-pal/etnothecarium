@@ -23,7 +23,11 @@ nvm use 12.19.0
 ```bash
 npm i @angular/cli@12.2.3 --global
 ```
-
+3. After that, run the following command to install the project dependencies
+```bash
+npm install
+```
+3. At this moment you can use the deploy the project in dev mode
 ## Usage
 
 To run the project in **Dev Mode** just run the command
