@@ -1080,8 +1080,17 @@ p {
     transition-delay: 1.5s;
 }
 
+#team-5 {
+    transition-delay: 2s;
+}
+
+#team-6 {
+    transition-delay: 2.5s;
+}
+
 #team-1,
-#team-3 {
+#team-3,
+#team-5 {
     opacity: 0;
     transform: translateY(4rem);
     transition-property: all;
@@ -1090,13 +1099,15 @@ p {
 }
 
 #team-1.entrar,
-#team-3.entrar {
+#team-3.entrar,
+#team-5.entrar {
     transform: translateY(0);
     opacity: 1;
 }
 
 #team-2,
-#team-4 {
+#team-4,
+#team-6 {
     opacity: 0;
     transform: translateY(0);
     transition-property: all;
@@ -1105,7 +1116,8 @@ p {
 }
 
 #team-2.entrar,
-#team-4.entrar {
+#team-4.entrar,
+#team-6.entrar {
     transform: translateY(4rem);
     opacity: 1;
 }
