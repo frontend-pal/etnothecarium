@@ -2,8 +2,8 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-import { TweenMax, TimelineMax } from "gsap";
-
+declare var TweenMax: any;
+declare var TimelineMax: any;
 declare var ScrollMagic: any;
 declare var $: any;
 
