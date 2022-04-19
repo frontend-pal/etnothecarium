@@ -26,6 +26,7 @@ export class NavBarComponent {
   menuState: string = 'out';
   texto: string = '';
   selected: string = 'es';
+  pdfData: string | undefined;
 
   constructor(
     public translate: TranslateService
@@ -64,4 +65,9 @@ export class NavBarComponent {
     console.log(test);
     // translate.use(langSelect.value)
   }
+
+  // testPdf() {
+  //   console.log("test");
+  //   this.pdfData = "assets/pdf/pdf-test.pdf";
+  // }
 }

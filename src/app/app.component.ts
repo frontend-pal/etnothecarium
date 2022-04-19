@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { UtilsService } from './utils/utils.service';
 
@@ -7,41 +7,24 @@ declare var $: any;
 @Component({
   selector: 'app-root',
   template: `
+    <div class="main-container" (window:scroll)="doSomethingOnWindowScroll($event)">
       <nav-bar></nav-bar>
-      <div class="nav-help"></div>
-      <router-outlet></router-outlet>
-      <app-loading *ngIf="loading"></app-loading>
-      <footer></footer>
-  `,
-  styles: [`
-      
-      footer {
-      }
-
-      .nav-help {
-          display: none;
-      }
-
-      @media screen and (min-width: 768px) {
-          .nav-help {
-              display: block;
-              margin-top: 1.6rem;
-              width: 100%;
-          }
-      }
-
-      @media screen and (min-width: 992px) {
-          .nav-help {
-              margin-top: 1.9rem;
-              width: 100%;
-          }
-      }
-  `]
+        <div class="nav-help"></div>
+        <router-outlet></router-outlet>
+        <app-loading *ngIf="loading"></app-loading>
+        <div class="ws-float-button" >
+          <a href="https://me-qr.com/Wo1Fn" target="_blank">
+              <img class="img-fluid" src="assets/images/svg/whatsapp.svg" alt="whatsapp-button">
+          </a> 
+        </div>
+        <footer></footer>
+    </div>
+  `
 })
+
 export class AppComponent implements OnInit {
   loading: boolean = false;
   userLang = navigator.language;
-
 
   constructor(
     private router: Router,
@@ -52,10 +35,30 @@ export class AppComponent implements OnInit {
     this.createListeners();
   }
 
+  @HostListener("window:scroll", ['$event'])
+  doSomethingOnWindowScroll($event: any) {
+    const scrollOffset = $event.srcElement.children[0].scrollTop;
+
+    if (scrollOffset > 150) {
+      const el = document.getElementsByClassName('ws-float-button')[0];
+
+      if (el !== undefined) {
+        el.classList.add('bounce-in-right');
+      }
+    }
+  }
+
   createListeners() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         this.loading = true;
+        const el = document.getElementsByClassName('ws-float-button')[0];
+
+        if (el !== undefined) {
+          if (el.classList.contains('bounce-in-right')) {
+            el.classList.remove('bounce-in-right');
+          }
+        }
       }
     });
 

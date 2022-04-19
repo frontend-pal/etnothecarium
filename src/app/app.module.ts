@@ -9,6 +9,8 @@ import { NavBarComponent } from './components/structure/nav-bar/nav-bar.componen
 import { SideBarComponent } from './components/structure/side-bar/side-bar.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedLazyModule } from './shared/shared-lazy.module';
+import { ModalFileViewerModule } from './utils/modal-file-viewer/modal-file-viewer.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ModalFileViewerModule,
     SharedModule
   ],
   providers: [],

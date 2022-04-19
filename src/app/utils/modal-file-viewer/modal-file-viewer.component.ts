@@ -7,6 +7,7 @@ import {
 
 @Component({
   selector: 'app-modal-file-viewer',
+  styleUrls: ['./modal-file-viewer.scss'],
   templateUrl: './modal-file-viewer.component.html'
 })
 export class ModalFileViewerComponent implements OnInit, OnChanges {
@@ -35,14 +36,16 @@ export class ModalFileViewerComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.pdfData = undefined;
+    console.log(this.pdfData);
   }
 
   ngOnChanges() {
-    if (this.pdfData === null) {
+    if (this.pdfData === null || this.pdfData === undefined) {
       this.show = false;
     } else {
       // this.createPdf(this.pdfData);
 
+      this.pdfSrc = this.pdfData;
       window.scrollTo({
         behavior: 'smooth',
         left: 0,

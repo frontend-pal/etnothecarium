@@ -218,11 +218,10 @@ textarea,
 
 .zone1,
 .zone2 {
-  width: 380px;
-  max-width: calc(50vw - 6rem);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 100%;
+  max-width: 400px;
   padding: 4rem 3rem;
+  margin: 0 auto;
 }
 
 .ws-button {
@@ -354,12 +353,18 @@ agm-map {
     font-size: 3rem;
     margin-top: -2.2rem;
   }
+
   .zone1,
   .zone2 {
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
+    /* max-width: calc(50vw - 6rem); */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 4rem 3rem;
   }
+
   .zone2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -428,15 +433,9 @@ agm-map {
     left: 6.4rem;
   }
   .zone3-1 .icono {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    /* justify-content: center; */
+    align-items: center;
   }
   .zone3-1 .icono i {
     margin-right: 0.8rem;
@@ -463,6 +462,7 @@ agm-map {
   }
   .interno .items {
     margin-bottom: 4rem;
+    margin-left: 2rem;
   }
   .interno .floral {
     -ms-flex-item-align: end;

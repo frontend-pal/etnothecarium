@@ -5,11 +5,13 @@ import { ModalFileViewerComponent } from './modal-file-viewer.component';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { CommonModule } from '@angular/common';
 
 const imports = [
   PdfViewerModule,
   RouterModule,
-  TranslateModule
+  TranslateModule,
+  CommonModule
 ];
 
 @NgModule({
