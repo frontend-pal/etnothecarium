@@ -88,9 +88,7 @@ export class ContactComponent implements OnInit {
 
 
   save() {
-    console.log("Valores aqui ", JSON.stringify(this.form.value));
     this.send(JSON.stringify(this.form.value));
-
     // f.reset();
   }
 

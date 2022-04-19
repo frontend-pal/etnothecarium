@@ -29,13 +29,10 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     @ViewChild('flor') flor: ElementRef | any;
 
     pathPrepare($el: any) {
-        console.log($el)
         var lineLength = $el[0].getTotalLength();
 
-        console.log(lineLength);
         $el.css('stroke-dasharray', lineLength);
         $el.css('stroke-dashoffset', lineLength);
-        console.log('preparado');
     }
 
     ngOnInit() {
@@ -59,7 +56,6 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         this.pathPrepare($('path#sol2'));
         this.pathPrepare($('path#sol3'));
         this.pathPrepare($('path#sol4'));
-        console.log($('path#rutasvg3'));
 
         var duracion1 = $('.zone1').height();
         var duracion0 = $('.zone0').height(); // nueva

@@ -56,7 +56,6 @@ p,
 #researchVideo {
   position: absolute;
   top: 0;
-  width: 100vw;
 }
 
 .top h1 {
@@ -505,5 +504,9 @@ p,
     bottom: -170px;
     left: 0;
     width: 470px;
+  }
+
+  #researchVideo {
+    width: 100vw;
   }
 }

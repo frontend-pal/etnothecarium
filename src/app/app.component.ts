@@ -16,7 +16,6 @@ declare var $: any;
   styles: [`
       
       footer {
-          margin-top: -13rem;
       }
 
       .nav-help {

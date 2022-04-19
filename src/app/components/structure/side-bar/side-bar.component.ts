@@ -19,6 +19,6 @@ export class SideBarComponent implements OnInit {
   }
 
   test(test: any){
-    console.log(test)
+    // console.log(test);
   }
 }

@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ModalFileViewerModule } from '../utils/modal-file-viewer/modal-file-viewer.module';
 
 @NgModule({
     imports: [
         HttpClientModule,
         CommonModule,
+        ModalFileViewerModule,
         TranslateModule.forChild()
     ],
     exports: [
         CommonModule,
-        TranslateModule
+        TranslateModule,
+        ModalFileViewerModule
     ]
 })
 export class SharedLazyModule { }

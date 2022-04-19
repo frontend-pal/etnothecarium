@@ -1,0 +1,42 @@
+<div *ngIf="show">
+  <div class="overlay">
+  </div>
+  <div>
+    <app-pdf-viewer [src]="pdfSrc" [render-text]="true" [zoom]="currentSize" [page]="page" [show-all]="false" [show-all]="false"
+      [autoresize]="true" [original-size]='true' [rotation]="currentRotation" [fit-to-page]='true'
+      [class]="!show ? '' : 'show' " (after-load-complete)="afterLoadComplete($event)">
+    </app-pdf-viewer>
+  </div>
+
+  <div class="tools">
+
+    <div class="page-tools">
+      <button (click)="currentRotation = currentRotation + 90" class="download">
+        <mat-icon svgIcon="rotate"></mat-icon>
+      </button>
+      <button (click)="currentSize = currentSize - 0.1" class="download">
+        <mat-icon svgIcon="decreaseSize"></mat-icon>
+      </button>
+      <button (click)="currentSize = currentSize + 0.1" class="download">
+        <mat-icon svgIcon="increaseSize"></mat-icon>
+      </button>
+      <button (click)="decreasePage()" [ngClass]="{ 'disabled' : page == 1 }">
+        <mat-icon svgIcon="arrow-back"></mat-icon>
+      </button>
+      <p>Página {{ page }} <span>de </span> {{ totalPages }}</p>
+      <button (click)="increasePage()" [ngClass]="{ 'disabled' : page == totalPages }">
+        <mat-icon svgIcon="arrow-back" class="next"></mat-icon>
+      </button>
+      <!-- <button (click)="downloadFile()" class="download">
+        <mat-icon svgIcon="cloudDownload"></mat-icon>
+      </button> -->
+    </div>
+
+
+    <div class="file-tools">
+      <button (click)="clearViewer()">
+        <mat-icon svgIcon="closeBurgerMenu"></mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
