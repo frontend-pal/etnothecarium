@@ -78,7 +78,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         var guia6 = TweenMax.to((sole3), 0.27, { strokeDashoffset: 0, ease: Linear.easeNone });
         var guia7 = TweenMax.to((sole4), 0.27, { strokeDashoffset: 0, ease: Linear.easeNone });
         var guia8 = TweenMax.to((albah), 4, { rotation: 45, transformOrigin: 'center' });
-        var guia9 = TweenMax.to((flor), 4, { rotation: 45, transformOrigin: 'center' });
+        var guia9 = TweenMax.to((flor), 4, { rotation: 135, transformOrigin: 'center' });
         var route_0 = new TimelineMax().add(guia0);
         var route_1 = new TimelineMax().add(guia1);
         var route_2 = new TimelineMax().add(guia2);

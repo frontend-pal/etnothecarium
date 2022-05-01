@@ -137,7 +137,9 @@
     "tituloZona2": "Join",
     "titulo1Zona2": "us",
     "textoZona2": "Answer this survey and be part of our family.",
-    "botonZona2": "Take survey"
+    "botonZona2": "Take survey",
+    "chat": "Chat With us",
+    "on": "on Whatsapp"
   },
   "App": {
     "lang": "en",

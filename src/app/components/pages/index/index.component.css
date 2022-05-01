@@ -898,3 +898,8 @@
     overflow: visible;
   }
 }
+
+#triggerFinal {  
+  position: relative;
+  z-index: 100000;
+}

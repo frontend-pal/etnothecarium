@@ -49,8 +49,7 @@ c-62.5,10.4-101.4,138.6-79.7,204c23.5,71,147.1,78.3,148.8,84.2" fill="none" id="
                     <img alt="Floral Ornament" class="rotateX" src="assets/images/svg/ornament.svg">
                 </div>
                 <p id="trigger-ruta-0">
-                <p>{{'products.textoZona0' | translate}}
-                </p>
+                <p [innerHtml]="'products.textoZona0' | translate"></p>
             </div>
             <div class="product-photo">
                 <img class="product2 img-fluid" src="assets/images/products/resin.png">
@@ -86,7 +85,7 @@ c-62.5,10.4-101.4,138.6-79.7,204c23.5,71,147.1,78.3,148.8,84.2" fill="none" id="
                         <h1 class="title">{{'products.subtituloZona1' | translate}}</h1>
                         <img src="assets/images/svg/ornament-white.svg" alt="Floral Ornament">
                     </div>
-                    <p [innerHtml]="'products.textoZona1' | translate">
+                    <p id="trigger-flor" [innerHtml]="'products.textoZona1' | translate">
                     </p>
                 </div>
                 <div class="product-photo">
@@ -164,6 +163,43 @@ c-62.5,10.4-101.4,138.6-79.7,204c23.5,71,147.1,78.3,148.8,84.2" fill="none" id="
                 </div>
                 <p >{{'products.textoZona6' | translate}}
                 </p>
+            </div>
+        </div>
+    </div>
+    <div class="zone3">
+        <div class="img-flower">
+            <img id="flor" #flor src="assets/images/stock/flower.png">
+        </div>
+        <div class="content">
+            <div class="product-text">
+                <div class="type-1">
+                    <img src="assets/images/svg/ornament.svg" alt="Floral Ornament">
+                    <h1 class="title">{{'products.tituloZona7' | translate}}</h1>
+                    <img class="rotateX" src="assets/images/svg/ornament.svg" alt="Floral Ornament">
+                </div>
+                <p [innerHtml]="'products.textoZona7' | translate">
+                </p>
+            </div>
+            <div class="product-photo">
+                <img class="product2 img-fluid" src="assets/images/products/aceite-herbal.png">
+            </div>
+        </div>
+    </div>
+    <div class="zone4">
+        <div class="content">
+            <div class="product-text">
+                <div class="type-1 type-2">
+                    <h1 class="title">{{'products.tituloZona8' | translate}}</h1>
+                    <div class="ornaments">
+                        <img src="assets/images/svg/ornament.svg" alt="Floral Ornament">
+                        <img class="rotateX" src="assets/images/svg/ornament.svg" alt="Floral Ornament">
+                    </div>
+                </div>
+                <p [innerHtml]="'products.textoZona8' | translate">
+                </p>
+            </div>
+            <div class="product-photo">
+                <img class="product2 img-fluid" src="assets/images/products/balsamo-labial.png">
             </div>
         </div>
     </div>

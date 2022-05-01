@@ -120,12 +120,12 @@ a.link {
 
   img {
     transition: all ease-in-out 150ms;
-    filter: drop-shadow(4px 4px 3px #00000047) saturate(0);
+    // filter: drop-shadow(4px 4px 3px #00000047) saturate(0);
   }
 
   &:hover {
     img {
-      filter: drop-shadow(4px 4px 3px #00000047) saturate(100%);
+      // filter: drop-shadow(4px 4px 3px #00000047) saturate(100%);
       transform: scale(1.125);
     }
   }
