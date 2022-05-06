@@ -27,6 +27,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     @ViewChild('sol4') sol4: ElementRef | any;
     @ViewChild('albahaca') albahaca: ElementRef | any;
     @ViewChild('flor') flor: ElementRef | any;
+    @ViewChild('anis') anis: ElementRef | any;
 
     pathPrepare($el: any) {
         var lineLength = $el[0].getTotalLength();
@@ -69,6 +70,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         var sole4 = this.sol4.nativeElement;
         var albah = this.albahaca.nativeElement;
         var flor = this.flor.nativeElement;
+        var anis = this.anis.nativeElement;
         var guia0 = TweenMax.to((ruta0), 0.9, { strokeDashoffset: 0, ease: Linear.easeNone });
         var guia1 = TweenMax.to((ruta1), 0.9, { strokeDashoffset: 0, ease: Linear.easeNone });
         var guia2 = TweenMax.to((ruta2), 0.9, { strokeDashoffset: 0, ease: Linear.easeNone });
@@ -79,6 +81,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         var guia7 = TweenMax.to((sole4), 0.27, { strokeDashoffset: 0, ease: Linear.easeNone });
         var guia8 = TweenMax.to((albah), 4, { rotation: 45, transformOrigin: 'center' });
         var guia9 = TweenMax.to((flor), 4, { rotation: 135, transformOrigin: 'center' });
+        var guia10 = TweenMax.to((anis), 4, { rotation: 135, transformOrigin: 'center' });
         var route_0 = new TimelineMax().add(guia0);
         var route_1 = new TimelineMax().add(guia1);
         var route_2 = new TimelineMax().add(guia2);
@@ -89,6 +92,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         var sole4 = new TimelineMax().add(guia7);
         var gira8 = new TimelineMax().add(guia8);
         var gira9 = new TimelineMax().add(guia9);
+        var gira10 = new TimelineMax().add(guia10);
 
         new ScrollMagic.Scene({
             addIndicators: true,
@@ -156,7 +160,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         new ScrollMagic.Scene({
             addIndicators: true,
             triggerElement: '#trigger-4',
-            duration: 20,
+            duration: 10,
             offset: -50,
             tweenChanges: true
         })
@@ -194,6 +198,17 @@ export class ProductsComponent implements OnInit, AfterViewInit {
             tweenChanges: true
         })
             .setTween(gira9)
+            .removeIndicators()
+            .addTo(this.controller)
+
+        new ScrollMagic.Scene({
+            addIndicators: true,
+            triggerElement: '#trigger-anis',
+            duration: 900,
+            offset: 200,
+            tweenChanges: true
+        })
+            .setTween(gira10)
             .removeIndicators()
             .addTo(this.controller)
 
