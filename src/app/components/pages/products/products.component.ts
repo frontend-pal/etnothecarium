@@ -117,7 +117,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
             addIndicators: true,
             triggerElement: '#trigger-ruta-2',
             duration: 1700,
-            offset: -100,
+            offset: -250,
             tweenChanges: true
         })
             .setTween(route_2)
