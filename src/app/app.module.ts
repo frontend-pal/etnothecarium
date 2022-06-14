@@ -10,7 +10,6 @@ import { SideBarComponent } from './components/structure/side-bar/side-bar.compo
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedLazyModule } from './shared/shared-lazy.module';
-import { ModalFileViewerModule } from './utils/modal-file-viewer/modal-file-viewer.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { ModalFileViewerModule } from './utils/modal-file-viewer/modal-file-view
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModalFileViewerModule,
     SharedModule
   ],
   providers: [],
