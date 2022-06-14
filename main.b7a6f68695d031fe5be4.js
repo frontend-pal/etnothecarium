@@ -13259,7 +13259,7 @@
                     }), p
                 })();
             class Yi {
-                constructor(o, a = "etnothecarium/assets/i18n/", f = ".json") {
+                constructor(o, a = "./assets/i18n/", f = ".json") {
                     this.http = o, this.prefix = a, this.suffix = f
                 }
                 getTranslation(o) {
