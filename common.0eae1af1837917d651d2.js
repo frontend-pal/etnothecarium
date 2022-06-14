@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunketnothecarium=self.webpackChunketnothecarium||[]).push([[592],{7424:(c,e,_)=>{_.d(e,{l:()=>l});var n=_(8583),o=_(5469),r=_(1841),t=_(3018);let l=(()=>{class a{}return a.\u0275fac=function(E){return new(E||a)},a.\u0275mod=t.oAB({type:a}),a.\u0275inj=t.cJS({imports:[[r.JF,n.ez,o.aw.forChild()],n.ez,o.aw]}),a})()}}]);
