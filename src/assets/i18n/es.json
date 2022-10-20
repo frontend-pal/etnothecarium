@@ -142,8 +142,10 @@
     "titulo1Zona2": "a Nosotros",
     "textoZona2": "Responda la encuesta y sea parte de nuestra familia",
     "botonZona2": "Realizar encuesta",
-    "chat": "Chatea con nosotros",
-    "on": "vía Whatsapp"
+    "chat": "Comumíquese con nosotros",
+    "on": "vía Correo Electrónico",
+    "scan": "Desde su celular escanee el siguiente codigo QR",
+    "sendemail": "O haga<a href='mailto:info@etnothecarium.com' target='_blank'> clic aquí.</a> para enviar un correo electrónico."
   },
   "App": {
     "lang": "es",

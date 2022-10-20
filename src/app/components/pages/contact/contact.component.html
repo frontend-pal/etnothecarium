@@ -7,24 +7,21 @@
 </div>
 <div class="container-fluid">
   <div class="section-1 row">
-    <div class="zone2 col-12 col-md-6 ">
+    <div class="zone2 col-12 col-lg-6 ">
       <div class="ws-button">
         <p class="title ">{{ 'contact.chat' | translate }}<br><span>{{ 'contact.on' | translate }}</span></p>
-        <img src="assets/images/svg/whatsapp.svg" alt="" class="ws-icon">
+        <img src="assets/images/svg/circle-mail.svg" alt="" class="ws-icon">
       </div>
-      <h2>Desde su celular escanee el siguiente codigo QR</h2>
+      <h2>{{ 'contact.scan' | translate }}</h2>
       <div class="qr-image">
-        <img src="assets/images/svg/qrcode_17615826_.svg" alt="" class="ws-icon">
+        <img src="assets/images/svg/qr-email-with-logo.svg" alt="qr-mail" class="ws-icon">
       </div>
-      <p class="qr-text text-center">
-        O agrege el número <a href="https://me-qr.com/Wo1Fn" target="_blank">+57 302 354 9121</a> a su agenda como
-        Etnotecarium.
-      </p>
+      <p class="qr-text text-center" [innerHTML]="'contact.sendemail' | translate"></p>
       <img class="flower d-none d-md-block" src="assets/images/svg/flower-green.svg">
       <img class="flower d-none d-md-block" src="assets/images/svg/flower-green.svg">
       <!-- <div class="vacio "></div> -->
     </div>
-    <div class="zone2 col-12 col-md-6 ">
+    <div class="zone2 col-12 col-lg-6 ">
       <div class="title2 ">
         <h1 class="title ">{{ 'contact.tituloZona2' | translate }}</h1>
         <h1 class="title ">{{ 'contact.titulo1Zona2' | translate }}</h1>
@@ -70,7 +67,7 @@
         </div> -->
         <div class="icono ">
           <i class="material-icons ">&#xE0E1;</i>
-          <h5>info@etnothecarium.com</h5>
+          <h5 class="allow-copy">info@etnothecarium.com</h5>
         </div>
         <!--<div class="icono ">
           <i class="material-icons ">&#xE0C8;</i>

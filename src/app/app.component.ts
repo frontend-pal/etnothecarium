@@ -12,11 +12,6 @@ declare var $: any;
         <div class="nav-help"></div>
         <router-outlet></router-outlet>
         <app-loading *ngIf="loading"></app-loading>
-        <div class="ws-float-button" >
-          <a href="https://me-qr.com/Wo1Fn" target="_blank">
-              <img class="img-fluid" src="assets/images/svg/whatsapp.svg" alt="whatsapp-button">
-          </a> 
-        </div>
         <footer></footer>
     </div>
   `
