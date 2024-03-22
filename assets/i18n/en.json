@@ -142,8 +142,10 @@
     "titulo1Zona2": "us",
     "textoZona2": "Answer this survey and be part of our family.",
     "botonZona2": "Take survey",
-    "chat": "Chat With us",
-    "on": "on Whatsapp"
+    "chat": "Contact us",
+    "on": "by Email",
+    "scan": "From your mobile scan the following QR code",
+    "sendemail": "Or <a href='mailto:info@etnothecarium.com' target='_blank'>click here</a> to send an email."
   },
   "App": {
     "lang": "en",
